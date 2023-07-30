@@ -39,3 +39,19 @@ You can report issues on [GitHub Issue](https://github.com/jooy2/vutron/issues).
 ## License
 
 Copyright © 2022-2023 [Jooy2](https://jooy2.com) <[jooy2.contact@gmail.com](mailto:jooy2.contact@gmail.com)> Released under the MIT license.
+
+
+## 启动配置
+node > 16
+npm设置
+```
+# 设置国内镜像源(加速)
+npm config set registry=https://registry.npmmirror.com
+npm config set disturl=https://registry.npmmirror.com/-/binary/node
+
+#如果下载electron慢，配置如下（或者挂个VPN）
+npm config set electron_mirror=https://registry.npmmirror.com/-/binary/electron/
+
+# 进入目录 .
+npm install
+```
